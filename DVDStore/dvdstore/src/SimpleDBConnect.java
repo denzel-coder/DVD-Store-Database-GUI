@@ -13,7 +13,7 @@ import java.sql.Statement;
 import java.sql.DatabaseMetaData;
 /**
  *
- * @author lejla
+ * @author Denzel 
  */
 public class SimpleDBConnect {
     public SimpleDBConnect(){
@@ -46,7 +46,7 @@ public class SimpleDBConnect {
             resultSet = statement.executeQuery("SELECT * FROM Customer");
 
             // hardcoded header
-            System.out.println("Actor_ID\tFirst_Name\tLast_Name\t\tDirector");
+            System.out.println("\tFirst_Name\tLast_Name\t\tDirector");
             System.out.println("=====\t================\t=======");
 
             // processing returned data and printing into console
