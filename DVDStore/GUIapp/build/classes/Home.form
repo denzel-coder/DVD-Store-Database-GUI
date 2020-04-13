@@ -120,36 +120,57 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Create Client"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CreateBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="DeleteBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Delete Client"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeleteBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="SearchBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Search Client"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="AddBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Add Movie"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="ShowMoviesBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Show Movies"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ShowMoviesBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="ShowBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Show Clients"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ShowBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="RentBtn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Rent Movie"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RentBtnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="HistoryBtn">
           <Properties>
@@ -163,6 +184,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Return Movie"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ReturnBtnActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -175,6 +199,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Exit"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExitBtnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

@@ -42,18 +42,53 @@ public class Home extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         CreateBtn.setText("Create Client");
+        CreateBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CreateBtnActionPerformed(evt);
+            }
+        });
 
         DeleteBtn.setText("Delete Client");
+        DeleteBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DeleteBtnActionPerformed(evt);
+            }
+        });
 
         SearchBtn.setText("Search Client");
+        SearchBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SearchBtnActionPerformed(evt);
+            }
+        });
 
         AddBtn.setText("Add Movie");
+        AddBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddBtnActionPerformed(evt);
+            }
+        });
 
         ShowMoviesBtn.setText("Show Movies");
+        ShowMoviesBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ShowMoviesBtnActionPerformed(evt);
+            }
+        });
 
         ShowBtn.setText("Show Clients");
+        ShowBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ShowBtnActionPerformed(evt);
+            }
+        });
 
         RentBtn.setText("Rent Movie");
+        RentBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RentBtnActionPerformed(evt);
+            }
+        });
 
         HistoryBtn.setText("Rent History");
         HistoryBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -63,6 +98,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         ReturnBtn.setText("Return Movie");
+        ReturnBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ReturnBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -113,6 +153,11 @@ public class Home extends javax.swing.JFrame {
         jLabel1.setText("Welcome");
 
         ExitBtn.setText("Exit");
+        ExitBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExitBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,6 +192,68 @@ public class Home extends javax.swing.JFrame {
     private void HistoryBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistoryBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_HistoryBtnActionPerformed
+
+    private void CreateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateBtnActionPerformed
+        // TODO add your handling code here:
+       NewCustomer n1=new NewCustomer();
+        n1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_CreateBtnActionPerformed
+
+    private void DeleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteBtnActionPerformed
+        // TODO add your handling code here:
+        DeleteCustomer d1=new DeleteCustomer();
+        d1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_DeleteBtnActionPerformed
+
+    private void SearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchBtnActionPerformed
+        // TODO add your handling code here:
+        Search s1=new Search();
+        s1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_SearchBtnActionPerformed
+
+    private void AddBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddBtnActionPerformed
+        // TODO add your handling code here:
+        AddMovie mm1=new AddMovie();
+        mm1.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_AddBtnActionPerformed
+
+    private void ShowMoviesBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowMoviesBtnActionPerformed
+        // TODO add your handling code here:
+        ShowMovies sm1=new ShowMovies();
+        sm1.setVisible(true);
+        this.setVisible(false);
+           
+    }//GEN-LAST:event_ShowMoviesBtnActionPerformed
+
+    private void ShowBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShowBtnActionPerformed
+        // TODO add your handling code here:
+           
+    }//GEN-LAST:event_ShowBtnActionPerformed
+
+    private void RentBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RentBtnActionPerformed
+        // TODO add your handling code here:
+        Rent r1=new Rent();
+        r1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_RentBtnActionPerformed
+
+    private void ReturnBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReturnBtnActionPerformed
+        // TODO add your handling code here:
+           
+    }//GEN-LAST:event_ReturnBtnActionPerformed
+
+    private void ExitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitBtnActionPerformed
+        // TODO add your handling code here:
+        System s1=new System();
+        s1.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_ExitBtnActionPerformed
 
     /**
      * @param args the command line arguments
